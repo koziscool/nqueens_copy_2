@@ -10,7 +10,7 @@ var boardView = {
       var $rowDiv = $('<div class="row">')
       for( var col= 0; col < size; col++ ){
         var squareIndex = row * size + col;
-        var $squareDiv = $('<div>');
+        var $squareDiv = $("<div> <div class='table'><div class='table-cell'></div></div></div>");
         $squareDiv.addClass('square');
         if( (row + col) % 2 === 0 ) {
           $squareDiv.addClass('dark-square');
@@ -27,8 +27,9 @@ var boardView = {
   },
 
   showSolutionView: function() {
-    for( var s in this.model.solution ){
-      var idString = '#square-' + this.model.solution[s];
+    // for( var s in this.model.solution ){
+    for( var i = 0; i < this.model.size * this.model.size; i++ ){
+      var idString = '#square-' + i
       $(idString).addClass('has-queen');
     }
   },

@@ -2,6 +2,8 @@
 
 var solverModel = {
 
+  size: 8,
+
   init: function() {
 
   },
