@@ -27,9 +27,8 @@ var boardView = {
   },
 
   showSolutionView: function() {
-    // for( var s in this.model.solution ){
-    for( var i = 0; i < this.model.size * this.model.size; i++ ){
-      var idString = '#square-' + i
+    for( var s in this.model.solution ){
+      var idString = '#square-' + this.model.solution[s];
       $(idString).addClass('has-queen');
     }
   },

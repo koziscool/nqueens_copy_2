@@ -1,6 +1,5 @@
 
 var controller = {
-
   model: solverModel,
   view: boardView,
 

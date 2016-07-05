@@ -1,18 +1,10 @@
 
-.board-container {
-  
-}
-
-.row {
-
-}
 
 .square {
   width: 60px;
   height: 60px;
   display: inline-block;
   border: 1px solid black;
-
 }
 
 .light-square {
